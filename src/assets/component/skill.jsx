@@ -8,9 +8,10 @@ import laravelpic from '../image/laravel-logo.png'
 import gtihubpic from '../image/github.png'
 import figmabpic from '../image/figma.png'
 import skill from '../image/skill img.png'
-
+import { Element } from 'react-scroll'
 function Skill() {
   return (
+     <Element name='skill-section'>
     <div className="w-full h-[48em] bg-[#3c3c3c] py-1">
      <div className="container mx-auto flex justify-between items-center my-8">
          <div className="left w-[65%]">
@@ -65,6 +66,7 @@ function Skill() {
            </div>
      </div>
     </div>
+     </Element>
   )
 }
 

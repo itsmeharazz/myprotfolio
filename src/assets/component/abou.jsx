@@ -1,6 +1,8 @@
 import aboutimage from "../image/about.png"
+import { Element } from "react-scroll"
 function About() {
   return (
+    <Element name="abour-section">
     <div className="w-full bg-[#d9d9d9] h-[38em]">
       <div className="container mx-auto flex justify-between items-center pt-[8em]">
         <div className="aboutLeft relative w-[30%] h-[24em] ">
@@ -22,6 +24,7 @@ function About() {
         </div>
       </div>
     </div>
+    </Element>
   )
 }
 

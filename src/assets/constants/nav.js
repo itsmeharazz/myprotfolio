@@ -1,0 +1,30 @@
+export const navlinks =[
+     {
+          lable:"Home",
+          href:'hero-section',
+     },
+     {
+          lable:"About",
+          href:'abour-section',
+     },
+     {
+          lable:"Skill",
+          href:'skill-section',
+     },
+     {
+          lable:"Project",
+          href:'project-section',
+     },
+     {
+          lable:"Service",
+          href:'Service-section',
+     },
+     {
+          lable:"Process",
+          href:'process-section',
+     },
+     {
+          lable:"Contact",
+          href:'contact-section',
+     },
+]

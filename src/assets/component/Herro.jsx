@@ -1,7 +1,8 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaMinus } from "react-icons/fa"
-import Navbar from "./navbar/navbar"
 import coverimage from "../image/my_image-removebg.png"
 import { useTypewriter, Cursor } from "react-simple-typewriter"
+import Header from "./navbar/header"
+import { Element } from "react-scroll"
 
 
 function Herro() {
@@ -13,8 +14,10 @@ function Herro() {
           
      })
   return (
-    <div className="bg-[#3C3C3C] h-full pt-28">
-     <Navbar />
+    <Element name ="hero-section">
+
+<div className="bg-[#3C3C3C] h-full pt-28">
+      <Header/>
      <div className="container flex justify-around items-start py-7">
           <div className="heroLeft justify-around flex  gap-28 w-[55%]"> 
             <div className="icon flex flex-col gap-4">
@@ -41,6 +44,7 @@ function Herro() {
          <span className="grid place-content-center font-bold text-xl">|</span>
       </div>
     </div>
+    </Element>
   )
 }
 

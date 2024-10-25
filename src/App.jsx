@@ -1,6 +1,7 @@
 
 import About from "./assets/component/abou"
 import Herro from "./assets/component/Herro"
+import Project from "./assets/component/project"
 import Skill from "./assets/component/skill"
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
      <Herro />
      <About />
      <Skill/>
+     <Project/>
     </div>
   )
 }
