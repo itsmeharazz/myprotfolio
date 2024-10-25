@@ -11,7 +11,7 @@ function Navbar() {
   }
   window.addEventListener('scroll', changBg)
   return (
-    <nav className=" fixed top-0 w-full z-50"{...navbar? 'bg-black text-white' : "bg-transparent"}>
+    <nav className=" fixed top-0 w-full z-100"{...navbar? 'bg-black text-white' : "bg-transparent"}>
       <div className="container mx-auto flex justify-between align-center bg-transparent min-h-16 py-7 text-[#fff]">
         <h2>Meharaz</h2>
         <ul className="flex justify-between align-center gap-4">

@@ -15,7 +15,7 @@ function Herro() {
   return (
     <div className="bg-[#3C3C3C] h-full pt-28">
      <Navbar />
-     <div className="container flex justify-around align-center py-7">
+     <div className="container flex justify-around items-start py-7">
           <div className="heroLeft justify-around flex  gap-28 w-[55%]"> 
             <div className="icon flex flex-col gap-4">
             <FaFacebook  className="text-[#fff] hover:text-[#EA4343] text-3xl transition-all"/>
