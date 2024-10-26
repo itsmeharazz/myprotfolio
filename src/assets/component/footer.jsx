@@ -1,5 +1,5 @@
 import { Element } from "react-scroll"
-import contactpic from '../image/Contact.jpg'
+import contactpic from '../image/Research.png'
 
 
 function Footer() {
@@ -18,7 +18,7 @@ function Footer() {
                <input type="text" placeholder="Trype your e-mail here" />
                <input type="text"  placeholder="Trype your subject here"/>
                <textarea placeholder="Trype your massege here"></textarea>
-               <button className="bg-[#ea4343] mt-4 w-[30%] h-12 text-white  rounded-xl">SEND MAIL</button>
+               <button type="submit" className="bg-[#ea4343] mt-4 w-[30%] h-12 text-white  rounded-xl">SEND MAIL</button>
           </from>
      </div>
     </div>
