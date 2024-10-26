@@ -1,5 +1,6 @@
 
 import About from "./assets/component/abou"
+import Footer from "./assets/component/footer"
 import Herro from "./assets/component/Herro"
 import Project from "./assets/component/project"
 import Service from "./assets/component/service"
@@ -15,6 +16,7 @@ function App() {
      <Project/>
      <Service/>
      <WorkProcess/>
+     <Footer/>
     </div>
   )
 }

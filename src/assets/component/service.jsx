@@ -38,7 +38,7 @@ function Service() {
                          </div>
                          <div className="grid grid-cols-3 gap-6 mt-5">
                          {services.map((service, ser)=>(
-                           <div className="bg-[#3c3c3c] p-4 text-white" key={ser}>
+                           <div className="bg-[#3c3c3c] p-4 text-white rounded-xl" key={ser}>
                               <h2 className="text-2xl pb-4 font-medium">{service.titel}</h2>
                               <p>{service.des}</p>
                            </div>   

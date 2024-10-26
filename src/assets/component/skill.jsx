@@ -6,10 +6,48 @@ import bootstrappic from '../image/800px-Bootstrap_logo.svg.png'
 import tailwind from '../image/tailwind-e5e18457.png'
 import laravelpic from '../image/laravel-logo.png'
 import gtihubpic from '../image/github.png'
-import figmabpic from '../image/figma.png'
+import figmapic from '../image/figma.png'
 import skill from '../image/skill img.png'
 import { Element } from 'react-scroll'
 function Skill() {
+     const skills =[
+          {
+               titel:'HTML',
+               img:htmlpic,
+          },
+          {
+               titel:'CSS 3',
+               img:csspic,
+          },
+          {
+               titel:'JavaScript',
+               img:jspic,
+          },
+          {
+               titel:'React',
+               img:reactjspic,
+          },
+          {
+               titel:'Bootstrap',
+               img:bootstrappic,
+          },
+          {
+               titel:'Tailwind',
+               img:tailwind,
+          },
+          {
+               titel:'Laravel',
+               img:laravelpic,
+          },
+          {
+               titel:'Github',
+               img:gtihubpic,
+          },
+          {
+               titel:'Figma',
+               img:figmapic,
+          },
+     ];
   return (
      <Element name='skill-section'>
     <div className="w-full h-[48em] bg-[#3c3c3c] py-1">
@@ -22,43 +60,12 @@ function Skill() {
           <p className="text-[#d9d9d9]">Most common methods for developing website that work well on desktop is responsive adaptive design </p>
           </div>
           <div className="lftCard  w-full h-[10em] flex justify-between items-center flex-wrap">
-          <div className="skill w-[18%] h-[12em] hover:bg-[#ea4343]  p-2 border-4 my-4  rounded-xl ">
-               <img src={htmlpic} alt="html" />
-               <p className='text-center text-white text-2xl font-medium'>HTML</p>
+          {skills.map((card, skilli) =>(
+          <div className="skill w-[18%] h-[12em] hover:bg-[#ea4343]  p-2 border-4 my-4  rounded-xl " key={skilli}>
+               <img src={card.img} alt="figma" />
+               <p className='text-center text-white text-2xl font-medium'>{card.titel}</p>
           </div>
-          <div className="skill w-[18%] h-[12em] hover:bg-[#ea4343]  p-2 border-4 my-4  rounded-xl ">
-               <img src={csspic} alt="html" />
-               <p className='text-center text-white text-2xl font-medium'>CSS 3</p>
-          </div>
-          <div className="skill w-[18%] h-[12em] hover:bg-[#ea4343]  p-2 border-4 my-4  rounded-xl ">
-               <img src={jspic} alt="html" />
-               <p className='text-center text-white text-2xl font-medium'>JavaScript</p>
-          </div>
-          <div className="skill w-[18%] h-[12em] hover:bg-[#ea4343]  p-2 border-4 my-4  rounded-xl ">
-               <img src={reactjspic} alt="html" />
-               <p className='text-center text-white text-2xl font-medium'>Reactjs</p>
-          </div>
-          <div className="skill w-[18%] h-[12em] hover:bg-[#ea4343]  p-2 border-4 my-4  rounded-xl ">
-               <img src={tailwind} alt="html" />
-               <p className='text-center text-white text-2xl font-medium'>Tailwind</p>
-          </div>
-          <div className="skill w-[18%] h-[12em] hover:bg-[#ea4343]  p-2 border-4 my-4  rounded-xl ">
-               <img src={bootstrappic} alt="html" />
-               <p className='text-center text-white text-2xl font-medium'>Booststrap</p>
-          </div>
-          <div className="skill w-[18%] h-[12em] hover:bg-[#ea4343]  p-2 border-4 my-4  rounded-xl ">
-               <img src={laravelpic} alt="Laravel" />
-               <p className='text-center text-white text-2xl font-medium'>Laravel</p>
-          </div>
-          <div className="skill w-[18%] h-[12em] hover:bg-[#ea4343]  p-2 border-4 my-4  rounded-xl ">
-               <img src={gtihubpic} alt="Github" />
-               <p className='text-center text-white text-2xl font-medium'>Githum</p>
-          </div>
-          <div className="skill w-[18%] h-[12em] hover:bg-[#ea4343]  p-2 border-4 my-4  rounded-xl ">
-               <img src={figmabpic} alt="figma" />
-               <p className='text-center text-white text-2xl font-medium'>Figma</p>
-          </div>
-          
+          ))}
           </div>
           </div> 
            <div className="right w-[30%] h-[25em] pt-[8em]">

@@ -41,9 +41,9 @@ function WorkProcess() {
           <p className="text-[#d9d9d9]">Let’s start working on your awesome website</p>
           <div className="work grid grid-cols-3 gap-6 mt-5">
                {work.map((work, process)=>(
-                    <div className="card bg-[#d9d9d9] rounded-xl p-3" key={process}>
+                    <div className="card bg-[#d9d9d9] rounded-xl p-3 hover:border hover:border-[#ea4343] hover:border-2" key={process}>
                          <div className="flex items-center">
-                             <p className="text-[2.5em] pr-2 text-[#a2a1a1]">{work.number}</p> 
+                             <p className="text-[2.5em] pr-1 text-[#a2a1a1]">{work.number}</p> 
                              <p className="text-2xl font-medium text-[#3c3c3c]">{work.titel} </p>
                          </div>
                              <p>{work.des}</p>
